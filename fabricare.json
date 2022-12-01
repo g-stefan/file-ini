@@ -1,0 +1,15 @@
+{
+	"project": {
+		"name":"file-ini",
+		"type":"xyo-cpp-project",
+		"make" : "lib-and-dll",
+		"SPDX-License-Identifier": "MIT",
+		"sourcePath" : "XYO/FileINI",
+		"testSource" : [
+			"test.01"
+		],
+		"dependency" : [
+			"xyo-system"
+		]
+	}
+}
