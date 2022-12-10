@@ -13,7 +13,6 @@ namespace XYO::FileINI::Copyright {
 	static const char *publisher_ = XYO_FILEINI_PUBLISHER;
 	static const char *company_ = XYO_FILEINI_COMPANY;
 	static const char *contact_ = XYO_FILEINI_CONTACT;
-	static const char *fullCopyright_ = XYO_FILEINI_FULL_COPYRIGHT;
 
 	const char *copyright() {
 		return copyright_;
@@ -29,10 +28,6 @@ namespace XYO::FileINI::Copyright {
 
 	const char *contact() {
 		return contact_;
-	};
-
-	const char *fullCopyright() {
-		return fullCopyright_;
 	};
 
 };

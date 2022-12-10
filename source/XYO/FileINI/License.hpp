@@ -13,8 +13,7 @@
 
 namespace XYO::FileINI::License {
 
-	XYO_FILEINI_EXPORT const char *licenseHeader();
-	XYO_FILEINI_EXPORT const char *licenseBody();
+	XYO_FILEINI_EXPORT const char *license();
 	XYO_FILEINI_EXPORT const char *shortLicense();
 
 };

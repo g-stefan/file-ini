@@ -16,7 +16,6 @@ namespace XYO::FileINI::Copyright {
 	XYO_FILEINI_EXPORT const char *publisher();
 	XYO_FILEINI_EXPORT const char *company();
 	XYO_FILEINI_EXPORT const char *contact();
-	XYO_FILEINI_EXPORT const char *fullCopyright();
 };
 
 #endif
