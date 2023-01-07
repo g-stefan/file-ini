@@ -17,7 +17,7 @@ namespace XYO::FileINI {
 		size_t index = 0;
 		size_t indexValue;
 		if (file.openRead(fileName)) {
-			while (StreamX::readLn(file, line, 16384)) {
+			while (StreamX::readLn(file, line, 32768)) {
 				Line &iniLine = document[index];
 				lineX = String::trimWithElement(line, trimElements);
 				if (lineX.isEmpty()) {
