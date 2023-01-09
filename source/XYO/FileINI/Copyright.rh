@@ -1,5 +1,5 @@
 // File INI
-// Copyright (c) 2022 Grigore Stefan <g_stefan@yahoo.com>
+// Copyright (c) 2022-2023 Grigore Stefan <g_stefan@yahoo.com>
 // MIT License (MIT) <http://opensource.org/licenses/MIT>
 // SPDX-FileCopyrightText: 2022 Grigore Stefan <g_stefan@yahoo.com>
 // SPDX-License-Identifier: MIT
@@ -7,7 +7,7 @@
 #ifndef XYO_FILEINI_COPYRIGHT_RH
 #define XYO_FILEINI_COPYRIGHT_RH
 
-#define XYO_FILEINI_COPYRIGHT "Copyright (c) 2022 Grigore Stefan <g_stefan@yahoo.com>"
+#define XYO_FILEINI_COPYRIGHT "Copyright (c) 2022-2023 Grigore Stefan <g_stefan@yahoo.com>"
 #define XYO_FILEINI_PUBLISHER "Grigore Stefan"
 #define XYO_FILEINI_COMPANY XYO_FILEINI_PUBLISHER
 #define XYO_FILEINI_CONTACT "g_stefan@yahoo.com"
