@@ -19,7 +19,7 @@ namespace XYO::FileINI {
 		if (file.openRead(fileName)) {
 			while (StreamX::readLn(file, line, 32768)) {
 				Line &iniLine = document[index];
-				lineX = StringX::trimWithElement(line, trimElements);
+				lineX = line.trimWithElement(trimElements);
 				if (lineX.isEmpty()) {
 					iniLine.type = LineType::None;
 					++index;
@@ -37,10 +37,10 @@ namespace XYO::FileINI {
 					++index;
 					continue;
 				};
-				if (StringX::indexOf(lineX, "=", 0, indexValue)) {
+				if (lineX.indexOf("=", 0, indexValue)) {
 					iniLine.type = LineType::Value;
-					iniLine.key = StringX::substring(lineX, 0, indexValue);
-					iniLine.value = StringX::substring(lineX, indexValue + 1);
+					iniLine.key = lineX.substring(0, indexValue);
+					iniLine.value = lineX.substring(indexValue + 1);
 					++index;
 					continue;
 				};
@@ -462,7 +462,7 @@ namespace XYO::FileINI {
 		for (k = 0; k < document.length(); ++k) {
 			if (document[k].type == LineType::Section) {
 				if (index == 0) {
-					section = StringX::substring(document[index].value, 1, document[index].value.length() - 2);
+					section = document[index].value.substring(1, document[index].value.length() - 2);
 					return true;
 				};
 				--index;
