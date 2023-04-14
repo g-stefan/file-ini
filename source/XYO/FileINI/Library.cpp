@@ -17,7 +17,7 @@ namespace XYO::FileINI {
 		size_t index = 0;
 		size_t indexValue;
 		if (file.openRead(fileName)) {
-			while (StreamX::readLn(file, line, 32768)) {
+			while (Stream::readLn(file, line, 32768)) {
 				Line &iniLine = document[index];
 				lineX = line.trimWithElement(trimElements);
 				if (lineX.isEmpty()) {
@@ -61,24 +61,24 @@ namespace XYO::FileINI {
 			for (k = 0; k < document.length(); ++k) {
 				switch (document[k].type) {
 				case LineType::Comment:
-					StreamX::write(file, document[k].value);
-					StreamX::write(file, "\r\n");
+					Stream::write(file, document[k].value);
+					Stream::write(file, "\r\n");
 					break;
 				case LineType::Section:
-					StreamX::write(file, document[k].value);
-					StreamX::write(file, "\r\n");
+					Stream::write(file, document[k].value);
+					Stream::write(file, "\r\n");
 					break;
 				case LineType::Value:
-					StreamX::write(file, document[k].key);
-					StreamX::write(file, "=");
-					StreamX::write(file, document[k].value);
-					StreamX::write(file, "\r\n");
+					Stream::write(file, document[k].key);
+					Stream::write(file, "=");
+					Stream::write(file, document[k].value);
+					Stream::write(file, "\r\n");
 					break;
 				default:
 					if (document[k].value.length() > 0) {
-						StreamX::write(file, document[k].value);
+						Stream::write(file, document[k].value);
 					};
-					StreamX::write(file, "\r\n");
+					Stream::write(file, "\r\n");
 					break;
 				};
 			};
