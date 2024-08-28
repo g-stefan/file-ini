@@ -24,6 +24,10 @@
 #else
 #	define XYO_FILEINI_EXPORT XYO_PLATFORM_LIBRARY_IMPORT
 #endif
+#ifdef XYO_FILEINI_LIBRARY
+#	undef XYO_FILEINI_EXPORT
+#	define XYO_FILEINI_EXPORT
+#endif
 
 // --
 
